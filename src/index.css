@@ -1,0 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@import url(./styles/vars.css);
+
+* {
+  font-family: "Cooper Black", cooper-black-std, sans-serif !important;
+}
+
+.font-roboto {
+  font-family: "Roboto";
+}
+
+.font-mulish {
+  font-family: "Mulish";
+}
+.container {
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 1220px) {
+  .container {
+    max-width: calc(100% - 40px);
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+.raffle-content {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 40px 20px;
+}
+.nft-card {
+  background-color: #261645;
+  border-radius: 10px;
+  width: calc(25% - 20px);
+}
+.nft-card img {
+  border-radius: 10px 10px 0 0;
+}
+.nft-card .card-content {
+  padding: 20px;
+}
+.nft-card .card-content p {
+  color: #eee;
+}
+.create-raffle {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  color: #eee;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+.create-raffle:hover {
+  background-color: #ffffff1a;
+}
+.new-raffle-content {
+  padding-bottom: 320px;
+}
+.new-raffle-content .media {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #261645;
+}
+.new-raffle-content .media img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.nft-name {
+  font-size: 30px;
+  text-align: center;
+  padding: 16px 0;
+}
+.mint-address {
+  text-align: center;
+  padding: 0 0;
+  font-size: 14px;
+}
+.raffle-control {
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background: #fff0;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 5px 4px 20px #0000001f;
+}
+.form-item {
+  margin-bottom: 20px;
+}
+.Mui-focused fieldset {
+  border-color: #fff !important;
+}
+
+.Mui-focused .MuiInputLabel-root {
+  color: #fff !important;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.form-control input {
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: 2px solid #0000008f;
+  background: transparent;
+  outline: none;
+}
+.form-control input:focus {
+  border-color: #13dfad;
+}
+.form-control label.form-label {
+  margin-top: 0;
+}
+.input-helper {
+  font-size: 12px;
+}
+.Mui-checked {
+  color: #11e2ab !important;
+}
+.form-control-icon {
+  position: relative;
+}
+.form-control-icon span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 10px;
+  color: #333;
+}
+
+.form-control-icon input {
+  margin-left: 30px;
+  width: calc(100% - 30px);
+  padding-right: 90px;
+}
+.form-control-icon input::placeholder {
+  color: #444;
+}
+.btn-create {
+  color: #fff;
+  background: #261645;
+  padding: 12px 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  transition: all 0.3s;
+  text-align: center;
+}
+.btn-create:disabled {
+  cursor: no-drop;
+  background-color: #000;
+}
+.btn-create:hover {
+  box-shadow: 6px 9px 20px #0000005e;
+  background-color: #000;
+}
+
+.btn-create:disabled:hover {
+  box-shadow: none;
+}
+.raffle-page {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 360px;
+}
+.raffled-card {
+  width: calc(25% - 40px);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #261645;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.raffled-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 30px #00000087;
+}
+.raffled-card .media {
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+.raffled-card .media.closed img {
+  filter: grayscale(1);
+}
+.raffled-card .raffled-card-content {
+  padding: 15px;
+}
+
+.raffled-card .raffled-card-content .nft-name {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+}
+.card-tickets {
+  color: #fff;
+  text-align: center;
+  margin: 12px auto;
+}
+.card-tickets.closed {
+  color: #aaa;
+}
+.join-raffle {
+  display: flex;
+}
+.btn-join {
+  background: #18daaf;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.btn-join:hover {
+  background: #10bd97;
+}
+.btn-join.closed {
+  background: #1086bd;
+  text-align: center;
+}
+.btn-join.closed:hover {
+  background: #0b78aa;
+}
+.endtime-countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.endtime-countdown span {
+  color: #fff !important;
+  letter-spacing: 2px !important;
+  font-size: 16px !important;
+  margin-left: 10px !important;
+}
+.endtime-countdown p {
+  font-size: 16px;
+  margin-left: 5px;
+  color: #fff;
+}
+
+.endtime-countdown.closed span {
+  color: #aaa !important;
+}
+.endtime-countdown.closed p {
+  color: #aaa;
+}
+.raffle-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.raffle-detail .raffle-detail-item label {
+  font-size: 14px;
+}
+.raffle-detail .raffle-detail-item p {
+  font-size: 20px;
+}
+
+.page-loading {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(12px);
+  background: #000000b3;
+}
+.page-loading .loading-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 20px #0005;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,75 @@
+{
+  "name": "sol-flowers",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@civic/solana-gateway-react": "^0.4.13",
+    "@craco/craco": "^6.4.3",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@headlessui/react": "^1.4.2",
+    "@identity.com/solana-gateway-ts": "^0.8.1",
+    "@loadable/component": "^5.15.0",
+    "@metaplex/js": "^4.3.0",
+    "@mui/icons-material": "^5.6.1",
+    "@mui/material": "^5.6.0",
+    "@nfteyez/sol-rayz": "^0.10.2",
+    "@project-serum/anchor": "^0.17.0",
+    "@solana/spl-token": "^0.1.8",
+    "@solana/wallet-adapter-base": "^0.7.0",
+    "@solana/wallet-adapter-react": "^0.13.1",
+    "@solana/wallet-adapter-react-ui": "^0.6.1",
+    "@solana/wallet-adapter-wallets": "^0.11.3",
+    "@solana/web3.js": "^1.33.0",
+    "animate.css": "^4.1.1",
+    "classnames": "^2.3.1",
+    "history": "^5.3.0",
+    "moment": "^2.29.2",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-countdown": "^2.3.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.1.1",
+    "react-icons": "^4.3.1",
+    "react-outside-click-handler": "^1.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "4.0.3",
+    "react-spinners": "^0.11.0",
+    "react-toastify": "^8.2.0",
+    "swiper": "^7.3.1",
+    "typescript": "^4.5.4",
+    "web-vitals": "^1.1.2",
+    "web3": "^1.6.0",
+    "web3modal": "^1.9.4"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  }
+}

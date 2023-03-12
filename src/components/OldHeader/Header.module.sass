@@ -1,0 +1,202 @@
+@import ../../styles/helpers
+
+.header
+    width: 100%
+    background: $purple1
+    position: relative
+    z-index: 20
+    padding: 20px 0 30px
+    display: flex
+    justify-content: center
+    //border-bottom: 1px solid $neutrals6
+    font-size: 1.5rem;
+    line-height: 2rem;
+    +m
+        border: none
+    +dark
+        border-color: $neutrals3
+        
+.container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    & > .button
+        margin-right: 12px
+        +m
+            display: none
+
+.logo
+    position: relative
+    z-index: 12
+    display: flex
+    flex-shrink: 0
+    width: 128px
+    margin-right: 32px
+    +d
+        margin-right: auto
+    img
+        width: 100%
+
+.separator
+    border-right: 2px solid $neutrals6
+    height: 24px
+    margin-left: 32px
+    padding-left: 24px
+    margin: auto
+
+    
+.wrapper
+    display: flex
+    align-items: center
+    +d
+        flex-grow: 0
+    +m
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        flex-direction: column
+        align-items: stretch
+        height: 100vh
+        margin: 0
+        padding: 140px 32px 40px
+        box-shadow: 0px 64px 64px rgba(31, 47, 70, 0.2)
+        background: $neutrals8
+        visibility: hidden
+        opacity: 0
+        transition: all .2s
+        +dark
+            background: $neutrals1
+        &.active
+            animation: down 200ms ease-in
+            background: $purple1
+            visibility: visible
+            opacity: 1
+    .button
+        display: none
+        +m
+            display: inline-flex
+            margin-top: 16px
+
+.nav
+    width: 100%
+    display: flex
+    margin-right: auto
+    align-items: center
+    +m
+        align-items: initial
+        display: flex
+        flex-direction: column
+        margin: 0 0 40px
+        border: none
+    +dark
+        border-color: $neutrals3
+
+.link
+    margin: auto
+    margin-left: 34px
+    +dm-sans
+    line-height: 48px
+    color: $white
+    transition: color .2s
+    +m
+        margin-left: 0
+        font-size: 24px
+        line-height: 64px
+    &::after
+        content: ''
+        display: block
+        width: 0
+        height: 2px
+        background: #fff
+        transition: width .3s
+    &:hover::after
+        width: 100%
+        transition: width .3s
+
+.search
+    position: relative
+    flex-shrink: 0
+    width: 256px
+    margin-right: 24px
+    +t
+        display: none
+    +m
+        display: block
+        width: 100%
+        margin: auto 0 0
+
+.input
+    width: 100%
+    height: 40px
+    padding: 0 42px 0 16px
+    background: none
+    border: 2px solid $neutrals6
+    border-radius: 8px
+    +poppins
+    +caption-2
+    transition: border-color .2s
+    +placeholder
+        color: $neutrals4
+    +dark
+        border-color: $neutrals3
+        color: $neutrals8
+    &:focus
+        border-color: $neutrals4
+
+.result
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    width: 42px
+    svg
+        fill: $neutrals4
+        transition: fill .2s
+    &:hover
+        svg
+            fill: $blue
+
+.notification
+    margin-right: 24px
+    +m
+        margin-right: 20px
+
+.burger
+    display: none
+    +m
+        display: block
+        position: relative
+        margin-left: 20px
+        width: 32px
+        height: 32px
+        background: none
+        -webkit-tap-highlight-color: rgba(0,0,0,0)
+        &.active
+            &:before
+                transform: translateY(0) rotate(-45deg)
+            &:after
+                transform: translateY(0) rotate(45deg)
+        &:before,
+        &:after
+            content: ''
+            position: absolute
+            top: 16px
+            left: 6px
+            width: 40px
+            height: 2px
+            background: $neutrals4
+            border-radius: 2px
+            transition: transform .2s
+        &:before
+            transform: translateY(-4px)
+        &:after
+            transform: translateY(3px)
+
+
+
+@keyframes down
+    from
+        top: -100vw
+    to
+        top: 0

@@ -1,0 +1,61 @@
+@import ../../../styles/helpers
+
+
+.dropdown
+    width: 300px
+    border-radius: 10px
+    color: white
+    margin: auto
+    text-align: end
+    overflow: auto
+    +m
+        text-align: start
+        margin: 0
+
+.dropdown h2
+    background: $purple1
+    font-size: 1.5rem;
+    color: white
+    line-height: 40px
+    cursor: pointer
+    +m
+        line-height: 64px
+
+
+
+
+.dropdownBody
+    padding: 5px
+    display: none
+    background: $purple1
+
+.open
+    display: block
+
+
+.dropdown-item:hover
+    cursor: pointer
+
+.dropdown-item-dot
+    opacity: 0
+    color: red
+    transition: all .2s ease-in-out
+
+.dropdown-item-dot .selected
+    opacity: 1
+
+.icon
+    font-size: 13px
+    color: red
+    transform: rotate(0deg)
+    transition: all .2s ease-in-out
+
+.icon .open
+    transform: rotate(90deg)
+
+
+.link
+    margin-bottom: 0.5rem
+    &:hover,
+    &.active
+        color: $blue

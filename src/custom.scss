@@ -1,0 +1,73 @@
+.raffled-card {
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-10px);
+        box-shadow: 0 4px 30px #00000056;
+    }
+}
+.buy-ticket-item {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    p {
+        font-size: 24px;
+        padding-left: 15px;
+    }
+    span {
+        font-size: 28px;
+        letter-spacing: 2px;
+        color: #87ff85;
+    }
+}
+.tickets-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    button {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        transition: all 0.3s;
+        &:hover {
+            border-color: #87ff85;
+            svg {
+                fill: #87ff85;
+            }
+        }
+    }
+    input {
+        width: calc(100% - 100px);
+        margin-right: 10px;
+        margin-left: 10px;
+        background: transparent;
+        border: 1px solid #000;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 4px;
+        outline: none;
+        &:focus {
+            border-color: #87ff85;
+        }
+    }
+}
+
+.new-raffle {
+    position: relative;
+    z-index: 3;
+}
+.page-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+}
+.no-ticket-alert {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.raffle-winner {
+    font-size: 12px;
+}

@@ -1,0 +1,535 @@
+/* CLAIM APE */
+
+#mint {
+    text-align: center;
+    scroll-margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: white;
+    padding: 0 0;
+    background-color: transparent;
+}
+
+#mint-gif-container {
+    border-radius: 10px;
+    width: 588px;
+    height: 588px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+#mint-gif {
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    top: -5px;
+    left: 2px;
+}
+
+#mint h3 {
+    font-weight: 600;
+    color: #f1f1f1;
+    align-items: center;
+}
+
+#mint p {
+    color: #f1f1f1;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#mint h4 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #f1f1f1;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#mint h5 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #f1f1f1;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#mint a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#payment-header {
+    display: flex;
+    position: relative;
+}
+
+#payment-header-text {
+    text-align: start;
+}
+
+#payment-header-text p {
+    margin-block-end: 0;
+}
+
+#payment-header-img {
+    width: 150px;
+    height: auto;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#claim-text-wrapper {
+    width: 524px;
+    height: 588px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-left: 80px;
+    margin-right: auto;
+    padding: 22px 32px 30px;
+    background: rgba(2, 34, 61, 0.3);
+    border-radius: 10px;
+}
+
+#payment-info {
+    display: flex;
+    padding: 12px;
+    border: solid white 1px;
+    border-radius: 10px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#payment-info-text {
+    text-align: end;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#payment-info-text p {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+#price-img {
+    width: 112px;
+    height: 112px;
+    border-radius: 10px;
+}
+
+#plus,
+#minus {
+    position: relative;
+    color: #f1f1f1;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+#plus {
+    margin-left: 26px;
+}
+
+#minus {
+    margin-left: 13px;
+}
+
+#plus svg,
+#minus svg {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ape-number {
+    display: flex;
+    padding: 12px;
+    background: rgba(55, 65, 81, 0.4);
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    align-items: center;
+}
+
+#ape-max {
+    color: #ababab;
+    text-align: end;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#ape-total {
+    display: flex;
+    height: 65px;
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+    margin-bottom: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#ape-total p,
+#ape-total h5 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#ape-total h5 {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.purchase-button {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: white;
+    background-color: #4e44ce;
+    border-radius: 10px;
+    padding: 11px;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    border: 1px solid #5ac4be;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 40px;
+    padding: 0 15px 5px;
+    border-radius: 20px;
+    color: white;
+}
+
+.purchase-button:focus,
+.purchase-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.purchase-button[disabled] {
+    cursor: not-allowed;
+}
+
+.wallet-adapter-button {
+    width: 100%;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 1375px) {
+    #mint {
+        display: block;
+    }
+
+    #mint-gif-container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #claim-text-wrapper {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    #mint h3 {
+        font-size: 40px;
+    }
+
+    #rare-spec h3 {
+        font-size: 40px;
+    }
+
+    #rare-spec {
+        display: block;
+    }
+
+    #artwork-image-wrapper {
+        justify-content: center;
+        grid-template-columns: repeat(4, 25vw);
+        column-gap: 0;
+        margin-bottom: 64px;
+        margin-top: 0;
+    }
+
+    #rare-spec img {
+        width: 25vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #jungle h3 {
+        font-size: 40px;
+    }
+
+    #jungle h4 {
+        font-size: 28px;
+    }
+
+    #jungle-wrapper {
+        width: 100%;
+    }
+
+    #jungle-top {
+        display: block;
+    }
+
+    #jungle-chain-text {
+        margin-top: 86px;
+    }
+
+    #jungle-left {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 86px;
+    }
+
+    #jungle-bottom {
+        margin-top: 86px;
+        margin-bottom: 86px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #logo-wrapper-wrapper {
+        border: none;
+        left: 16px;
+    }
+
+    #logo-wrapper-wrapper h3 {
+        display: none;
+    }
+
+    #logo-wrapper {
+        justify-content: unset;
+    }
+
+    #nav-wrapper {
+        right: 16px;
+    }
+
+    #mint-gif-container {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #hero-image {
+        padding-top: 60%;
+    }
+
+    #mint-gif-container {
+        width: 90%;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    #claim-text-wrapper {
+        width: 90%;
+        margin-bottom: 32px;
+    }
+
+    #mint h3 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    #rare-spec {
+        display: block;
+    }
+
+    .image-gallery-team {
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    #faq h4 {
+        font-size: 18px;
+        margin-block-start: 2em;
+        margin-block-end: 2em;
+    }
+
+    #what-text,
+    #when-text,
+    #where-text,
+    #how-text,
+    #who-text {
+        width: 80%;
+    }
+
+    #more-wrapper {
+        display: block;
+    }
+
+    #play,
+    #community {
+        margin-top: 64px;
+    }
+
+    #more p {
+        width: 60%;
+    }
+
+    #more h4 {
+        margin-block-start: 0;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #roadmap {
+        display: none;
+    }
+    #roadmap-mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #nav-wrapper {
+        display: none;
+    }
+
+    #nav-wrapper-mobile {
+        display: block;
+    }
+
+    #social-links-hero-whitepaper-mobile {
+        display: flex;
+    }
+
+    #social-links-hero-whitepaper {
+        display: none;
+    }
+
+    #social-links-hero-twitter,
+    #social-links-hero-instagram,
+    #social-links-hero-discord,
+    #social-links-hero-opensea,
+    #social-links-hero-etherscan {
+        width: 100%;
+    }
+
+    #social-links-hero a {
+        width: 20%;
+    }
+
+    #social-links-hero-etherscan {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image-gallery-team div {
+        width: 40vw;
+    }
+    .image-gallery-team {
+        grid-template-columns: repeat(2, 50vw);
+        row-gap: 24px;
+    }
+
+    #countdown-clock h2 {
+        font-size: 22px;
+    }
+
+    #countdown-clock h3 {
+        font-size: 22px;
+    }
+
+    #countdown-clock h4 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .image-div-mobile {
+        width: 100%;
+    }
+
+    .image-gallery img {
+        width: 300px;
+    }
+
+    #footer-logo {
+        display: none;
+    }
+
+    #footer-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 32px;
+    }
+
+    .name-insta-wrapper svg {
+        display: none;
+    }
+
+    #claim-text-wrapper {
+        height: auto;
+        padding: 8px;
+    }
+
+    #plus svg,
+    #minus svg {
+        width: 23px;
+        height: 23px;
+    }
+
+    #countdown-clock h2 {
+        font-size: 20px;
+    }
+
+    #countdown-clock h3 {
+        font-size: 20px;
+    }
+
+    #countdown-clock h4 {
+        font-size: 10px;
+    }
+
+    #countdown-clock ul {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h3 {
+        font-size: 24px;
+    }
+
+    #faq h4 {
+        font-size: 14px;
+    }
+
+    #faq p {
+        font-size: 10px;
+    }
+
+    #payment-header-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    #price-img {
+        display: none;
+    }
+
+    #payment-info-text {
+        margin-right: auto;
+        text-align: center;
+    }
+}

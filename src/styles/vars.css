@@ -1,0 +1,15 @@
+:root {
+  --primary-color-1: #0d0d0d;
+  /* --primary-color-1: #0d0d0d; */
+  --primary-color-2: #131313;
+  --primary-color-3: #121318;
+  --color-purple: #261645;
+}
+/* :root {
+  --primary-color-1: #06070b;
+  --primary-color-2: #10121b;
+  --primary-color-3: #121318;
+} */
+iframe {
+  display: none !important;
+}
